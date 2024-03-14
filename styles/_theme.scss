@@ -4,6 +4,15 @@ $tablets: 768px;
 $laptop: 1024px;
 $desktop: 1440px;
 
+//Colors -------------------------
+$primary: #e7816b;
+$primary_variant: #ffad9b;
+$secondary: #1d1c1e;
+$secondary_variant: #333136;
+$background: #ffffff;
+$error: #f1f3f5;
+$activeButton: #66d2cf;
+
 //Neutralisers --------------------------------------------------
 * {
   margin: 0;
@@ -17,26 +26,8 @@ $desktop: 1440px;
 }
 
 body {
-  background-color: #ffffff;
-  padding: 0 10%;
-
-  @media (max-width: $tablets) {
-    padding: 0 5%;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 0;
-  }
+  background-color: $white
 }
-
-//Colors -------------------------
-$primary: #e7816b;
-$primary_variant: #ffad9b;
-$secondary: #1d1c1e;
-$secondary_variant: #333136;
-$background: #ffffff;
-$error: #f1f3f5;
-$activeButton: #66d2cf;
 
 //Fonts -------------------------
 $font: "Jost", sans-serif;
