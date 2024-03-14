@@ -26,7 +26,7 @@ $activeButton: #66d2cf;
 }
 
 body {
-  background-color: $white
+  background-color: $background;
 }
 
 //Fonts -------------------------
@@ -53,11 +53,11 @@ $font: "Jost", sans-serif;
 }
 
 @mixin h1_text {
-  @include fonts($size: 48px, $line_height: 48px, $color: $black);
+  @include fonts($size: 48px, $line_height: 48px, $color: $secondary_variant);
 }
 
 @mixin h2_text {
-  @include fonts($size: 40px, $line_height: 48px, $color: $black);
+  @include fonts($size: 40px, $line_height: 48px, $color: $secondary_variant);
 }
 
 @mixin h3_text {
@@ -65,7 +65,7 @@ $font: "Jost", sans-serif;
     $size: 20px,
     $line_height: 26px,
     $letter_spacing: +5,
-    $color: $dark_grey
+    $color: $secondary_variant
   );
 }
 
@@ -74,7 +74,7 @@ $font: "Jost", sans-serif;
     $size: 16px,
     $weight: 400,
     $line_height: 26px,
-    $color: $dark_grey
+    $color: $secondary_variant
   );
 }
 
@@ -93,8 +93,8 @@ $font: "Jost", sans-serif;
   @include border();
 
   button:hover {
-    background-color: $ligt_peach;
-    color: $white;
+    background-color: $secondary_variant;
+    color: $secondary;
   }
 }
 
@@ -124,4 +124,6 @@ $font: "Jost", sans-serif;
 @mixin test($tcol: black) {
   background-color: $tcol;
   opacity: 0.5;
+  @include border();
+  border-color: red;
 }
