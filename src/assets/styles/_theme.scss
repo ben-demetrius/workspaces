@@ -1,0 +1,126 @@
+//Breakpoints ---------------------
+$mobile: 576px;
+$tablets: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+//Neutralisers --------------------------------------------------
+*,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@media print {
+  body {
+    background-color: transparent;
+  }
+}
+
+body {
+  background-color: #ffffff;
+}
+
+//Colors -------------------------
+$peach: #e7816b;
+$ligt_peach: #ffad9b;
+$black: #1d1c1e;
+$dark_grey: #333136;
+$white: #ffffff;
+$ligt_grey: #f1f3f5;
+
+//Fonts -------------------------
+$font: "Jost", sans-serif;
+
+@mixin fonts(
+  $fam: $font,
+  $weight: 500,
+  $font_size,
+  $line_height,
+  $letter_spacing: +2px,
+  $color,
+  $style: normal
+) {
+  font: {
+    family: $fam;
+    weight: $weight;
+    size: $font_size;
+    style: $style;
+  }
+  letter-spacing: $letter_spacing;
+  line-height: $line_height;
+  color: $color;
+}
+
+@mixin body_text($color: $white, $font_size: 1rem) {
+  @include fonts(
+    $font_size: $font_size,
+    $weight: 400,
+    $line_height: 26px,
+    $color: $color
+  );
+}
+@mixin h1_text($color: $white, $font_size: 1rem) {
+  @include fonts(
+    $font_size: $font_size,
+    $weight: 400,
+    $line_height: 26px,
+    $color: $color
+  );
+}
+@mixin h2_text($color: $white, $font_size: 1rem) {
+  @include fonts(
+    $font_size: $font_size,
+    $weight: 400,
+    $line_height: 26px,
+    $color: $color
+  );
+}
+
+//Borders -------------------------------------------
+@mixin border($rad: 5px) {
+  border: none;
+  border-radius: $rad;
+}
+
+//Buttons -------------------------------------------
+@mixin button($bg_color, $text_color) {
+  background-color: $bg_color;
+  color: $text_color;
+
+  @include border();
+
+  button:hover {
+    background-color: $ligt_peach;
+    color: $white;
+  }
+}
+
+//Flex, Positionining & Sizing ----------------------
+@mixin flex($direction: column, $gap: 0%, $align: center, $justify: center) {
+  display: flex;
+  flex: {
+    direction: $direction;
+    wrap: wrap;
+  }
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin absolute($position: absolute, $top: 0px) {
+  position: $position;
+  top: $top;
+}
+
+@mixin max-res($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+//Test ---------------------------------
+@mixin test($tcol: black) {
+  background-color: $tcol;
+  opacity: 0.5;
+}
