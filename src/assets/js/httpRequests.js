@@ -19,9 +19,10 @@ const post = async (postData) => {
 };
 
 const get = async () => {
-  return await makeHttpRequest({
+  const data = await makeHttpRequest({
     method: "GET",
   });
+  return data.json();
 };
 
 export { post, get };

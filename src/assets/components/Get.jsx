@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { get } from "../js/httpRequests.js";
 
-const text = get();
+const [text, setText] = useState("");
+
+const fetchData = async () => {
+  const data = await get();
+  setText(data);
+};
+
+useEffect(() => {
+  fetchData();
+  console.log(text);
+}, []);
+
 const Get = () => {
   console.log(get());
   return <div className="get">{text}</div>;
