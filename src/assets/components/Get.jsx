@@ -7,7 +7,7 @@ const Get = () => {
   const fetchData = async () => {
     const fetchdata = await get();
     //console.log(fetchdata);
-    setData(fetchdata.items[0].firstname);
+    setData(fetchdata.items[fetchdata.items.length - 1].firstname);
   };
 
   useEffect(() => {
