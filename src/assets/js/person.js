@@ -1,8 +1,7 @@
-function person(firstname, lastname, age) {
+function person(firstname, lastname) {
   return {
     firstname: firstname,
     lastname: lastname,
-    age: age,
   };
 }
 

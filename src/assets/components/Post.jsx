@@ -2,9 +2,9 @@ import React from "react";
 import person from "../js/person.js";
 import { post } from "../js/httpRequests.js";
 
-const Ben = new person("Ben", "Demetrius", 25);
-const Ben10 = new person("Ben10", "Demetrius", 10);
-const Ben100 = new person("Ben100", "Demetrius", 100);
+const Ben = new person("Ben", "Demetrius");
+const Ben10 = new person("Ben10", "Demetrius");
+const Ben100 = new person("Ben100", "Demetrius");
 
 const Post = () => {
   return (
