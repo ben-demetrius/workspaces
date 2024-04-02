@@ -1,7 +1,7 @@
 const makeHttpRequest = async ({
   url = "http://localhost:8080/o/c/persons",
   method,
-  body,
+  body = null,
 }) => {
   const headers = {
     "Content-Type": "application/json; charset=utf8",
@@ -22,7 +22,8 @@ const get = async () => {
   const data = await makeHttpRequest({
     method: "GET",
   });
-  return data.json();
+
+  return await data.json();
 };
 
 export { post, get };

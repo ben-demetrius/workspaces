@@ -40,3 +40,28 @@ const post = async (obj) => {
 };
 
 export default post;
+
+//   const [text, setText] = useState("");
+
+//   const fetchData = async () => {
+//     const data = await get();
+//     console.log(data);
+//     setText(data.items);
+//   };
+
+//   useEffect(() => {
+//     console.log("holla Ben");
+//     fetchData();
+//   }, []);
+
+for (let i = 0; i <= data.items.length; i++) {
+  setFirstname(data.items[i].firstname);
+  setLastname(data.items[i].lastname);
+  setAge(data.items[i].age);
+  console.log(i);
+  console.log(firstname);
+}
+
+// const [firstname, setFirstname] = useState("");
+// const [lastname, setLastname] = useState("");
+// const [age, setAge] = useState("");
