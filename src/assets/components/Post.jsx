@@ -9,9 +9,7 @@ const Ben100 = new person("Ben100", "Demetrius");
 const Post = () => {
   return (
     <div className="Comp">
-      <p>
-        {Ben.firstname}! {Ben.age}.
-      </p>
+      <p>{Ben.firstname}!</p>
       <button onClick={() => post(Ben)}>POST</button>
       <button onClick={() => post(Ben10)}>POST 10</button>
       <button onClick={() => post(Ben100)}>POST 100</button>
