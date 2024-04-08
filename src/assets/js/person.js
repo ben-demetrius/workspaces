@@ -5,6 +5,7 @@ function person(firstname, lastname) {
     firstname: firstname,
     lastname: lastname,
   };
+  //return data;
   post(data);
 }
 
