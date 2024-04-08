@@ -12,8 +12,8 @@ const App = () => {
     <div className="App">
       <Post />
       {/* <Get /> */}
-      <button onClick={() => addPeople()}>POST from App</button>
-      <button onClick={() => removePeople()}>Remove from App</button>
+      <button onClick={addPeople}>POST from App</button>
+      <button onClick={removePeople}>Remove from App</button>
     </div>
   );
 };
