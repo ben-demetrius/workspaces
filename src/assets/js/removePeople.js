@@ -3,9 +3,9 @@ import { remove } from "./httpRequests";
 
 export const removePeople = async () => {
   let data = await get();
-  let id;
 
   for (let i = 0; i < data.length; i++) {
+    let id;
     id = data[i].id;
     remove(id);
   }
