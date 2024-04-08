@@ -19,11 +19,17 @@ const post = async (postData) => {
 };
 
 const get = async () => {
-  const data = await makeHttpRequest({
+  let data = await makeHttpRequest({
     method: "GET",
   });
-
-  return await data.json();
+  data = await data.json();
+  return data.items;
 };
 
-export { post, get };
+const remove = async (id) => {
+  return await makeHttpRequest({
+    method: "DELETE",
+    url: url + "/" + id,
+  });
+};
+export { get, post, remove };

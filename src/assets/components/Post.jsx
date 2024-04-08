@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import person from "../js/person.js";
-import { post } from "../js/httpRequests.js";
-
-const Ben = new person("Ben", "Demetrius");
-const Ben10 = new person("Ben10", "Demetrius");
-const Ben100 = new person("Ben100", "Demetrius");
 
 const Post = () => {
+  const [firstName, setFirstname] = useState("");
+  const [lastName, setLastname] = useState("");
+
   return (
-    <div className="Comp">
-      <p>{Ben.firstname}!</p>
-      <button onClick={() => post(Ben)}>POST</button>
-      <button onClick={() => post(Ben10)}>POST 10</button>
-      <button onClick={() => post(Ben100)}>POST 100</button>
-    </div>
+    <form className="Post">
+      <input
+        type="text"
+        id="fname"
+        value={firstName}
+        onChange={(e) => setFirstname(e.target.value)}
+      />
+      <input
+        type="text"
+        id="lname"
+        value={lastName}
+        onChange={(e) => setLastname(e.target.value)}
+      />
+      <button onClick={() => new person(firstName, lastName)}>POST</button>
+    </form>
   );
 };
 

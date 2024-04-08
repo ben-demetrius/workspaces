@@ -1,8 +1,11 @@
+import { post } from "./httpRequests";
+
 function person(firstname, lastname) {
-  return {
+  const data = {
     firstname: firstname,
     lastname: lastname,
   };
+  post(data);
 }
 
 export default person;
