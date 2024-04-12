@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import person from "../js/person.js";
+import person from "../js/Person.js";
 
 const Post = () => {
   const [firstName, setFirstname] = useState("");

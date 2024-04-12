@@ -1,4 +1,4 @@
-import person from "./person";
+import person from "./Person";
 
 export const addPeople = async () => {
   let n = 10;
