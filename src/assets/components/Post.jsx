@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import person from "../js/Person.js";
+import Person from "../js/Person.js";
 
 const Post = () => {
   const [firstName, setFirstname] = useState("");
@@ -29,7 +29,7 @@ const Post = () => {
         value={age}
         onChange={(e) => setAge(e.target.value)}
       />
-      <button onClick={() => new person(firstName, lastName, age)}>POST</button>
+      <button onClick={() => new Person(firstName, lastName, age)}>POST</button>
     </form>
   );
 };
