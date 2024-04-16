@@ -5,19 +5,9 @@ import "../styles/get.scss";
 
 const Get = () => {
   const [data, setData] = useState([]);
-  const fetchData = async () => {
-    const fetchdata = await get();
-    //console.log(fetchdata);
-    setData(fetchdata);
-  };
-
-  useEffect(() => {
-    // setData(fetchData);
-    fetchData();
-  }, []);
-
-  // console.log(data[1].firstname);
-  console.log(data);
+  (async () => {
+    setData(await get());
+  })();
 
   return (
     <div className="get">
