@@ -5,10 +5,12 @@ import "../styles/get.scss";
 
 const Get = () => {
   const [data, setData] = useState([]);
-  (async () => {
-    setData(await get());
-  })();
 
+  useEffect(() => {
+    get().then(setData);
+  }, []);
+  console.log(data);
+  
   return (
     <div className="get">
       {data.map((data, index) => {

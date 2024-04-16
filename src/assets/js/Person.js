@@ -11,7 +11,6 @@ function Person(firstname, lastname, age) {
   };
 
   post(data);
-  console.log(data);
 }
 
 export default Person;
