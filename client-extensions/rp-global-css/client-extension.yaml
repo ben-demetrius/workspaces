@@ -1,0 +1,8 @@
+assemble:
+  - from: src
+    into: static
+
+rp-global-css:
+  name: RSPCA Practise CSS CX
+  type: globalCSS
+  url: index.css
