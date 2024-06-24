@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { get } from "../js/httpRequests.js";
-import "../styles/card.scss";
-import "../styles/get.scss";
 
 const Get = () => {
   const [data, setData] = useState([]);
@@ -10,20 +8,17 @@ const Get = () => {
     get().then(setData);
   }, []);
   console.log(data);
-  
-  return (
-    <div className="get">
-      {data.map((data, index) => {
-        return (
-          <div className="card" key={index}>
-            <h1>{data.firstname}</h1>
-            <h3>{data.lastname}</h3>
-            <p>{data.yearsLeft}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+
+  const Cards = data.map(myFunction);
+
+  function myFunction(data, i) {
+    return (
+      <div className="card" key={i}>
+        <h1>{data.firstname}</h1>
+      </div>
+    );
+  }
+  return <div className="get">{Cards}</div>;
 };
 
 export default Get;
