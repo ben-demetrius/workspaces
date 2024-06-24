@@ -1,5 +1,5 @@
 const makeHttpRequest = async ({
-  url = "http://localhost:8080/o/c/persons",
+  url = `/o/c/persons`,
   method,
   body = null,
 }) => {
