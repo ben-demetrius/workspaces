@@ -5,7 +5,7 @@ const Get = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    get().then(setData);
+    get().then((data) => setData(data));
   }, []);
   console.log(data);
 
