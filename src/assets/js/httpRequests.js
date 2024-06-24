@@ -29,7 +29,7 @@ const get = async () => {
 const remove = async (id) => {
   return await makeHttpRequest({
     method: "DELETE",
-    url: `http://localhost:8080/o/c/persons/${id}`,
+    url: `/o/c/persons/${id}`,
   });
 };
 export { get, post, remove };
