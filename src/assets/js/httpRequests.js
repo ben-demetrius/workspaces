@@ -18,8 +18,9 @@ const post = async (postData) => {
   });
 };
 
-const get = async () => {
+const get = async (url) => {
   let data = await makeHttpRequest({
+    url: url,
     method: "GET",
   });
   data = await data.json();
