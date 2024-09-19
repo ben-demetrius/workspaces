@@ -1,3 +1,9 @@
+//Neutralisers --------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
+
 //Breakpoints ---------------------
 $mobile: 375px;
 $tablets: 768px;
@@ -12,12 +18,6 @@ $secondary_variant: #333136;
 $background: #ffffff;
 $error: #f1f3f5;
 $activeButton: #66d2cf;
-
-//Neutralisers --------------------------------------------------
-* {
-  margin: 0;
-  padding: 0;
-}
 
 @media print {
   body {
