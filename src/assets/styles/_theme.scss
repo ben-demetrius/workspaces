@@ -11,46 +11,28 @@
 }
 
 //Responsiveness ---------------------
-$xxl: 1536px;
-$xl: 1280px;
-$lg: 1024px;
+// $xxl: 1536px;
+$xl: 14400px;
+// $lg: 1024px;
 $md: 768px;
-$sm: 640px;
-$xs: 475px;
+// $sm: 640px;
+$xs: 375px;
 
 .container {
-  max-width: $xxl;
+  max-width: $xl;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-@media (max-width: $xxl) {
-  .container {
-    max-width: $xl;
-  }
+  // padding-left: 2.5rem;
+  // padding-right: 2.5rem;
 }
 
 @media (max-width: $xl) {
-  .container {
-    max-width: $lg;
-  }
-}
-
-@media (max-width: $lg) {
   .container {
     max-width: $md;
   }
 }
 
 @media (max-width: $md) {
-  .container {
-    max-width: $sm;
-  }
-}
-
-@media (max-width: $sm) {
   .container {
     max-width: $xs;
   }
@@ -114,6 +96,11 @@ $font: "Red Hat Text", sans-serif;
 }
 
 //Components
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
 //Test ---------------------------------
 // div {
 //   border: 1px dotted red;

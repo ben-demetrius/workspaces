@@ -1,14 +1,26 @@
 import React from "react";
-import "./assets/styles/App.scss";
-// import Post from "./assets/components/Post";
-// import Get from "./assets/components/Get";
+import "./assets/styles/app.scss";
+import CartItem from "./assets/components/CartItem";
+import Order from "./assets/components/Order";
 
 const App = () => {
+  const title = "Desert";
+
   return (
-    <div className="App">
-      {/* <Post />
-      <Get /> */}
-      <p className="text-preset-1">Test</p>
+    <div className="cart">
+      <div className="cart-main">
+        <h1 className="cart-main--h1">{title}</h1>
+        <div className="cart-main--items">
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+        </div>
+      </div>
+      <Order />
     </div>
   );
 };

@@ -1,0 +1,22 @@
+@import "./theme";
+
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-400;
+
+  //   @extend .container;
+
+  .cart-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: $space-400;
+
+    .cart-main--items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: $space-300;
+    }
+  }
+}
