@@ -4,52 +4,42 @@
   @include flex($direction: column, $gap: $space-200);
 
   .cart-img-add-btn {
-    @extend .container;
-
-    margin-bottom: 15px;
-
+    @include flex($direction: column, $gap: 0);
+    align-items: center;
     position: relative;
+    margin-bottom: calc($space-300 - 2px);
 
     .cart--image {
-      width: 300px;
-      height: 300px;
-      border-radius: 15px;
+      width: 240px;
+      height: 250px;
     }
 
     .cart--button {
-      padding: 15px 20px;
-
       position: absolute;
-      bottom: -15px;
-      right: 25%;
+      bottom: calc(($space-300 - 2px) * -1);
+      @include flex($gap: $space-100);
 
-      display: flex;
-      gap: 15px;
-
+      padding: $space-150 $space-300;
       border-radius: 25px;
       border: 1px solid $rose-400;
       background-color: $white;
 
       svg {
       }
-
       .cart-button--p {
+        @extend .text-preset-4-bold;
       }
     }
   }
 
   .cart-card-texts {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+    .cart--category {
+    }
 
-  .cart--category {
-  }
+    .cart--name {
+    }
 
-  .cart--name {
-  }
-
-  .cart--price {
+    .cart--price {
+    }
   }
 }
