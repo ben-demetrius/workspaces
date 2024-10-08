@@ -54,6 +54,14 @@ $space-150: 12px;
 $space-100: 8px;
 $space-50: 4px;
 
+//Layout
+@mixin flex($direction: row, $gap: $space-300) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
 //Colors -------------------------
 $red: #c73b0f;
 $green: #1ea575;

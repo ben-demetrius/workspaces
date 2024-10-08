@@ -1,9 +1,7 @@
 @import "./theme";
 
 .cart-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  @include flex($direction: column, $gap: $space-200);
 
   .cart-img-add-btn {
     @extend .container;
