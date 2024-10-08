@@ -8,6 +8,7 @@ const App = () => {
     <div className="App">
       {/* <Post />
       <Get /> */}
+      <p className="text-preset-1">Test</p>
     </div>
   );
 };
