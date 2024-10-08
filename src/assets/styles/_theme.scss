@@ -104,10 +104,8 @@ $font: "Red Hat Text", sans-serif;
 }
 
 //Components
-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
+#root {
+  background-color: $rose-50;
 }
 //Test ---------------------------------
 // div {

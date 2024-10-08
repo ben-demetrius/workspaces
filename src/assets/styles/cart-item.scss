@@ -12,6 +12,7 @@
     .cart--image {
       width: 240px;
       height: 250px;
+      border-radius: 15px;
 
       @media (max-width: $md) {
         width: 213px;
@@ -43,13 +44,21 @@
   }
 
   .cart-card-texts {
+    @include flex($direction: column, $gap: $space-50);
+
     .cart--category {
+      @extend .text-preset-4;
+      color: $rose-500;
     }
 
     .cart--name {
+      @extend .text-preset-3;
+      color: $rose-900;
     }
 
     .cart--price {
+      @extend .text-preset-3;
+      color: $red;
     }
   }
 }

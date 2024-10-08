@@ -1,1 +1,65 @@
 @import "./theme";
+
+.cart-order {
+  @include flex($direction: column, $gap: $space-300);
+
+  height: fit-content;
+  padding: $space-300;
+
+  background-color: $white;
+
+  .cart-order--h2 {
+  }
+
+  .cart-order-items {
+    .cart-order-item {
+      .cart-item-details {
+        .cart-order--name {
+        }
+
+        .cart-item-rates {
+          .cart-item--quantity {
+          }
+
+          .cart-item--price {
+          }
+
+          .cart-item--total {
+          }
+        }
+      }
+
+      .cart-item--close-btn {
+        svg {
+          path {
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    color: $rose-100;
+  }
+
+  .cart-total {
+    .cart-total--label {
+    }
+
+    .cart-total--price {
+    }
+  }
+
+  .cart-carbon {
+    svg {
+      path {
+      }
+    }
+
+    .cart-carbon--p {
+    }
+  }
+
+  .cart-oder--confirm-btn {
+  }
+}

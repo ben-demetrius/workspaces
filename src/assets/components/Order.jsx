@@ -84,7 +84,7 @@ const Order = () => {
           </button>
         </div>
       </div>
-
+      <hr />
       <div className="cart-total">
         <p className="cart-total--label">Order Total</p>
         <p className="cart-total--price">$20</p>
