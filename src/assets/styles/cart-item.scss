@@ -12,6 +12,16 @@
     .cart--image {
       width: 240px;
       height: 250px;
+
+      @media (max-width: $md) {
+        width: 213px;
+        height: 212px;
+      }
+
+      @media (max-width: $xs) {
+        width: 327px;
+        height: 212px;
+      }
     }
 
     .cart--button {
