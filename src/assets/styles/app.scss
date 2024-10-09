@@ -4,6 +4,7 @@
   @include flex($gap: $space-400);
   flex-wrap: nowrap;
   @media (max-width: $md) {
+    flex-wrap: wrap;
   }
 
   @media (max-width: $xs) {
@@ -23,11 +24,7 @@
       grid-template-columns: auto auto auto;
       gap: $space-300;
 
-      @media (min-width: calc($xl - 1px)) {
-        grid-template-columns: auto auto;
-      }
-
-      @media (min-width: calc($xs - 1px)) {
+      @media (max-width: calc($xs)) {
         grid-template-columns: auto;
       }
     }
