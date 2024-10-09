@@ -1,6 +1,24 @@
 @import "./theme";
 
 .cart-item {
+  .hide-desktop {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .hide-tablet {
+    @media (min-width: $md) and (max-width: $xs) {
+      display: none;
+    }
+  }
+
+  .hide-mobile {
+    @media (min-width: $xs) {
+      display: none;
+    }
+  }
+
   @include flex($direction: column, $gap: $space-200);
 
   .cart-img-add-btn {

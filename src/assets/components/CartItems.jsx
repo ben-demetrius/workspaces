@@ -8,7 +8,9 @@ const CartItems = () => {
     return (
       <CartItem
         key={i}
-        imageFileName={item.image.desktop}
+        imageDesktop={item.image.desktop}
+        imageTablet={item.image.tablet}
+        imageMobile={item.image.mobile}
         name={item.name}
         category={item.category}
         price={item.price}
