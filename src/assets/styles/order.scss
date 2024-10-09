@@ -4,11 +4,17 @@
   @include flex($direction: column, $gap: $space-300);
 
   height: fit-content;
-  min-width: 364px;
   padding: $space-300;
 
   background-color: $white;
   border-radius: $space-150;
+
+  min-width: 364px;
+  @media (max-width: $md) {
+  }
+
+  @media (max-width: $xs) {
+  }
 
   .cart-order--h2 {
     @extend .text-preset-2;
