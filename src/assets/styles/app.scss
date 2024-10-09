@@ -25,7 +25,7 @@
       grid-template-columns: auto auto auto;
       gap: $space-300;
 
-      @media (max-width: calc($xs)) {
+      @media (max-width: $xs) {
         grid-template-columns: auto;
       }
     }
