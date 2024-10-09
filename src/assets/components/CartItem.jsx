@@ -1,13 +1,15 @@
 import React from "react";
 import "../styles/cart-item.scss";
 
-import img from "../images/image-waffle-desktop.jpg";
+import imageFileNameTest from "../../../public/assets/images/image-brownie-thumbnail.jpg";
 
-const CartItem = () => {
+const CartItem = ({ imageFileName, name, category, price }) => {
+  const addText = "Add to Cart";
+
   return (
     <div className="cart-item">
       <div className="cart-img-add-btn">
-        <img className="cart--image" src={img} alt="item image" />
+        <img className="cart--image" src={imageFileNameTest} alt="item image" />
         <button className="cart--button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,13 +28,13 @@ const CartItem = () => {
               </clipPath>
             </defs>
           </svg>
-          <p className="cart-button--p">Add to Cart</p>
+          <p className="cart-button--p">{addText}</p>
         </button>
       </div>
       <div className="cart-card-texts">
-        <p className="cart--category">Waffle</p>
-        <p className="cart--name">Waffle with Berries</p>
-        <p className="cart--price">$6.50</p>
+        <p className="cart--category">{category}</p>
+        <p className="cart--name">{name}</p>
+        <p className="cart--price">${price}</p>
       </div>
     </div>
   );
