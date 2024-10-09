@@ -105,8 +105,16 @@ $font: "Red Hat Text", sans-serif;
 
 //Components
 #root {
-  padding: $space-1100 112px;
   background-color: $rose-50;
+  padding: $space-1100 112px;
+
+  @media (max-width: $md) {
+    padding: $space-500;
+  }
+
+  @media (max-width: $xs) {
+    padding: $space-300;
+  }
 }
 //Test ---------------------------------
 // div {

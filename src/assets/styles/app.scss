@@ -3,6 +3,12 @@
 .cart {
   @include flex($gap: $space-400);
 
+  @media (max-width: $md) {
+  }
+
+  @media (max-width: $xs) {
+  }
+
   .cart-main {
     @include flex($direction: column, $gap: $space-400);
 
