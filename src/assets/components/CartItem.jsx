@@ -1,15 +1,13 @@
 import React from "react";
 import "../styles/cart-item.scss";
 
-import imageFileNameTest from "../../../public/assets/images/image-brownie-desktop.jpg";
-
 const CartItem = ({ imageFileName, name, category, price }) => {
   const addText = "Add to Cart";
 
   return (
     <div className="cart-item">
       <div className="cart-img-add-btn">
-        <img className="cart--image" src={imageFileNameTest} alt="item image" />
+        <img className="cart--image" src={imageFileName} alt="item image" />
         <button className="cart--button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
