@@ -9,11 +9,12 @@
   background-color: $white;
   border-radius: $space-150;
 
-  min-width: 336px;
+  width: 336px;
   @media (max-width: $md) {
   }
 
   @media (max-width: $xs) {
+    width: 100%;
   }
 
   .cart-order--h2 {
