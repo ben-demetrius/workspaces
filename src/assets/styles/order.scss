@@ -4,6 +4,7 @@
   @include flex($direction: column, $gap: $space-300);
 
   height: fit-content;
+  min-width: 364px;
   padding: $space-300;
 
   background-color: $white;
@@ -82,9 +83,9 @@
 
   .cart-carbon {
     @include flex($gap: $space-50);
-    align-items: center;
+    justify-content: center;
 
-    padding: $space-200 calc($space-500 + 11.5px);
+    padding: $space-200 0;
 
     background-color: $rose-50;
     border-radius: $space-100;
