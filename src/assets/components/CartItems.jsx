@@ -8,7 +8,7 @@ const CartItems = () => {
     return (
       <CartItem
         key={i}
-        imageFileName={item.image.thumbnail}
+        imageFileName={item.image.desktop}
         name={item.name}
         category={item.category}
         price={item.price}
