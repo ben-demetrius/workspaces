@@ -12,38 +12,11 @@
 
 //Responsiveness ---------------------
 // $xxl: 1536px;
-
 $xl: 1440px;
 $lg: 1024px;
 $md: 768px;
 $sm: 740px;
 $xs: 500px;
-
-.container {
-  max-width: $xl;
-  margin-left: auto;
-  margin-right: auto;
-  // padding-left: 2.5rem;
-  // padding-right: 2.5rem;
-}
-
-@media (max-width: $xl) {
-  .container {
-    max-width: $md;
-  }
-}
-
-@media (max-width: $md) {
-  .container {
-    max-width: $xs;
-  }
-}
-
-@media (max-width: $xs) {
-  .container {
-    width: 100%;
-  }
-}
 
 //Spacing ------------------------------
 $space-1100: 88px;
