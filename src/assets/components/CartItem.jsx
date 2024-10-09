@@ -30,9 +30,9 @@ const CartItem = () => {
         </button>
       </div>
       <div className="cart-card-texts">
-        <p className="cart--category">Category</p>
-        <p className="cart--name">Name</p>
-        <p className="cart--price">$Price</p>
+        <p className="cart--category">Waffle</p>
+        <p className="cart--name">Waffle with Berries</p>
+        <p className="cart--price">$6.50</p>
       </div>
     </div>
   );

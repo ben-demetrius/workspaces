@@ -6,6 +6,11 @@
   .cart-main {
     @include flex($direction: column, $gap: $space-400);
 
+    .cart-main--h1 {
+      @extend .text-preset-1;
+      color: $rose-900;
+    }
+
     .cart-main--items {
       display: grid;
       grid-template-columns: auto auto auto;

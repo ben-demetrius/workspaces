@@ -4,7 +4,7 @@ import CartItem from "./assets/components/CartItem";
 import Order from "./assets/components/Order";
 
 const App = () => {
-  const title = "Desert";
+  const title = "Desserts";
 
   return (
     <div className="cart">
