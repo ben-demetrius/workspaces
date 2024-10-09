@@ -2,7 +2,7 @@
 
 .cart {
   @include flex($gap: $space-400);
-
+  flex-wrap: nowrap;
   @media (max-width: $md) {
   }
 
