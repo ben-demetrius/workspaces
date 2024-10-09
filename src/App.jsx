@@ -18,6 +18,8 @@ const App = () => {
           <CartItem />
           <CartItem />
           <CartItem />
+          <CartItem />
+          <CartItem />
         </div>
       </div>
       <Order />

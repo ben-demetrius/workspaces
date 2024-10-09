@@ -12,10 +12,10 @@
 
 //Responsiveness ---------------------
 // $xxl: 1536px;
-$xl: 14400px;
 // $lg: 1024px;
-$md: 768px;
 // $sm: 640px;
+$xl: 14400px;
+$md: 768px;
 $xs: 375px;
 
 .container {
@@ -105,7 +105,7 @@ $font: "Red Hat Text", sans-serif;
 
 //Components
 #root {
-  padding: 88px 112px;
+  padding: $space-1100 112px;
   background-color: $rose-50;
 }
 //Test ---------------------------------

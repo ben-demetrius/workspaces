@@ -8,6 +8,7 @@
 
   background-color: $white;
   border-radius: $space-150;
+
   .cart-order--h2 {
     @extend .text-preset-2;
     color: $red;
@@ -53,7 +54,6 @@
       }
 
       .cart-item--close-btn {
-        padding: 2px;
         height: 20px;
         width: 20px;
 
@@ -63,10 +63,6 @@
         color: $rose-400;
       }
     }
-  }
-
-  hr {
-    color: $rose-100;
   }
 
   .cart-total {
@@ -88,10 +84,10 @@
     @include flex($gap: $space-50);
     align-items: center;
 
-    padding: 15px 25px;
+    padding: $space-200 calc($space-500 + 11.5px);
 
     background-color: $rose-50;
-    border-radius: 10px;
+    border-radius: $space-100;
 
     .cart-carbon--p {
       @extend .text-preset-4;
@@ -100,10 +96,10 @@
   }
 
   .cart-oder--confirm-btn {
-    padding: 15px 25px;
+    padding: $space-200 0;
     justify-content: center;
 
-    border-radius: 20px;
+    border-radius: $space-400;
     border: none;
     background-color: $red;
 

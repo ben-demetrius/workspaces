@@ -31,12 +31,10 @@
       @include flex($gap: $space-100);
 
       padding: $space-150 $space-300;
-      border-radius: 25px;
+      border-radius: $space-300;
       border: 1px solid $rose-400;
       background-color: $white;
 
-      svg {
-      }
       .cart-button--p {
         @extend .text-preset-4-bold;
       }
