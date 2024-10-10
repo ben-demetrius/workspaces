@@ -2,14 +2,16 @@
 
 .cart-item {
   .hide-desktop {
-    @media (max-width: $md) {
-      display: none;
+    display: none;
+    @media (min-width: $md) {
+      display: block;
     }
   }
 
   .hide-tablet {
-    @media (min-width: $md) and (max-width: $xs) {
-      display: none;
+    display: none;
+    @media (min-width: $xs) and (max-width: $md) {
+      display: block;
     }
   }
 
