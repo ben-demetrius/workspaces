@@ -1,6 +1,7 @@
 import React from "react";
 import { items } from "../data";
 import CartItem from "./CartItem";
+import "../styles/cart-items.scss";
 
 const CartItems = () => {
   const cards = items.map((item, i) => {
