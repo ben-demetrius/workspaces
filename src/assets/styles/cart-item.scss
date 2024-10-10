@@ -2,9 +2,8 @@
 
 .cart-item {
   .hide-desktop {
-    display: none;
-    @media (min-width: $md) {
-      display: block;
+    @media (max-width: $md) {
+      display: none;
     }
   }
 
