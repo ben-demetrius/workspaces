@@ -8,7 +8,7 @@
   }
 
   .hide-tablet {
-    @media (max-width: $xs), (min-width: calc($md +1px)) {
+    @media (max-width: $xs), (min-width: calc($md + 1px)) {
       display: none;
     }
   }
