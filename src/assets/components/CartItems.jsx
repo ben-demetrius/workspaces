@@ -1,5 +1,4 @@
 import React from "react";
-// import "./cart-items.scss";
 import { items } from "../data";
 import CartItem from "./CartItem";
 
