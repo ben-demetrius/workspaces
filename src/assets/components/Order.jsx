@@ -57,7 +57,7 @@ const Order = () => {
         <p className="cart-total--price">$20</p>
       </div>
       <div className="cart-carbon">
-        <img src="/assets/images/icon-remove-item.svg" alt="Close Button" />
+        <img src="/assets/images/icon-carbon-neutral.svg" alt="Close Button" />
         <p className="cart-carbon--p">
           This is a <b>carbon-neutral</b> delivery
         </p>
