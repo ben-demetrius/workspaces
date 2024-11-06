@@ -1,0 +1,9 @@
+@import "./theme";
+
+.pfa-cards {
+  @include flex();
+}
+
+.pfa-card {
+  width: 100px;
+}
