@@ -5,7 +5,7 @@ import Cards from "./assets/components/Cards";
 const objectToDisplay = "/o/c/snbresearchlibraries/";
 const App = () => {
   return (
-    <div className="snb-cards">
+    <div className="react-template">
       <Cards url={objectToDisplay} />
     </div>
   );
