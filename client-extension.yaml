@@ -1,0 +1,15 @@
+assemble:
+    - from: vite-build
+      into: static
+react-template:
+    cssURLs:
+        - assets/*.css
+    friendlyURLMapping: react-template
+    htmlElementName: react-template
+    instanceable: false
+    name: React Template
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - assets/*.js
+    useESM: true
